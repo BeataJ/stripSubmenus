@@ -17,6 +17,16 @@ closeBtn.addEventListener('click', () => {
 });
 
 // set sidebar
-sidebar.innerHTML = sublinks.map((item) => {
-  const { links, page } = item;
-});
+sidebar.innerHTML = sublinks
+  .map((item) => {
+    const { links, page } = item;
+    return `
+  <article>
+    <h4>${page}</h4>
+    <div class="sidebar-sublinks">
+      ${links.map((item) => {}).join('')}
+    </div>
+  </article>
+  `;
+  })
+  .join('');
