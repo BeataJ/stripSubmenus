@@ -15,3 +15,8 @@ toggleBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   sideBarWrapper.classList.remove('show');
 });
+
+// set sidebar
+sidebar.innerHTML = sublinks.map((item) => {
+  const { links, page } = item;
+});
