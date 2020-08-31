@@ -53,6 +53,12 @@ linkBtns.forEach((btn) => {
 
       // Optional
       let columns = 'col-2';
+      if (links.length === 3) {
+        columns = 'col-3';
+      }
+      if (links.length > 3) {
+        columns = 'col-4';
+      }
 
       submenu.innerHTML = `
       <section>
