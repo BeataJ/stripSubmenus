@@ -75,6 +75,7 @@ hero.addEventListener('mouseover', (e) => {
 });
 
 nav.addEventListener('mouseover', (e) => {
-  if (!e.target.classList.contains('link-btn'))
+  if (!e.target.classList.contains('link-btn')) {
     submenu.classList.remove('show');
+  }
 });
