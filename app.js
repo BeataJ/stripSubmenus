@@ -43,6 +43,10 @@ linkBtns.forEach((btn) => {
     const tempBtn = e.currentTarget.getBoundingClientRect();
     const center = (tempBtn.left + tempBtn.right) / 2;
     const bottom = tempBtn.bottom - 3;
+
+    const tempPage = sublinks.find(({ page }) => page === text);
+    console.log(tempPage);
+
     submenu.classList.add('show');
     submenu.style.left = `${center}px`;
     submenu.style.top = `${bottom}px`;
