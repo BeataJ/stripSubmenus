@@ -38,5 +38,7 @@ sidebar.innerHTML = sublinks
   .join('');
 
 linkBtns.forEach((btn) => {
-  btn.addEventListener('mouseover', function (e) {});
+  btn.addEventListener('mouseover', (e) => {
+    console.log(e.currentTarget);
+  });
 });
