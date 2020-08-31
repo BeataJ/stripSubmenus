@@ -45,10 +45,10 @@ linkBtns.forEach((btn) => {
     const bottom = tempBtn.bottom - 3;
 
     const tempPage = sublinks.find(({ page }) => page === text);
-    console.log(tempPage);
-
-    submenu.classList.add('show');
-    submenu.style.left = `${center}px`;
-    submenu.style.top = `${bottom}px`;
+    if (tempPage) {
+      submenu.classList.add('show');
+      submenu.style.left = `${center}px`;
+      submenu.style.top = `${bottom}px`;
+    }
   });
 });
