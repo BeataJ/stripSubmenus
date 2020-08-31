@@ -36,3 +36,7 @@ sidebar.innerHTML = sublinks
   `;
   })
   .join('');
+
+linkBtns.forEach((btn) => {
+  btn.addEventListener('mouseover', function (e) {});
+});
